@@ -1,0 +1,2 @@
+D:\Projects\Vizor\Test_Task\Test_task\Intermediate\Build\Win64\UE4Editor\Development\Test_task\Definitions.Test_task.h
+D:\Projects\Vizor\Test_Task\Test_task\Source\Test_task\Test_task.h

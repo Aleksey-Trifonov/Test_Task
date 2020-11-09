@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "Test_task",
+			"Path": "D:\\Projects\\Vizor\\Test_Task\\Test_task\\Source\\Test_task.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "Test_taskEditor",
+			"Path": "D:\\Projects\\Vizor\\Test_Task\\Test_task\\Source\\Test_taskEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}

@@ -1,0 +1,8 @@
+{
+	"SourceFiles": [
+		"D:\\Projects\\Vizor\\Test_Task\\Test_task\\Source\\Test_task\\Test_task.Build.cs",
+		"D:\\Projects\\Vizor\\Test_Task\\Test_task\\Source\\Test_task.Target.cs",
+		"D:\\Projects\\Vizor\\Test_Task\\Test_task\\Source\\Test_taskEditor.Target.cs"
+	],
+	"EngineVersion": "4.25.3"
+}

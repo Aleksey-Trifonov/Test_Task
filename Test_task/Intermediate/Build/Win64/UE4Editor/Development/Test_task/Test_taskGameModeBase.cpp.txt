@@ -1,0 +1,7 @@
+D:\Projects\Vizor\Test_Task\Test_task\Intermediate\Build\Win64\UE4Editor\Development\Test_task\Definitions.Test_task.h
+D:\Projects\Vizor\Test_Task\Test_task\Source\Test_task\Test_taskGameModeBase.h
+C:\Program Files (x86)\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\GameFramework/GameModeBase.h
+C:\Program Files (x86)\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Engine/ServerStatReplicator.h
+C:\Program Files (x86)\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\ServerStatReplicator.generated.h
+C:\Program Files (x86)\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\Engine\GameModeBase.generated.h
+D:\Projects\Vizor\Test_Task\Test_task\Intermediate\Build\Win64\UE4Editor\Inc\Test_task\Test_taskGameModeBase.generated.h
