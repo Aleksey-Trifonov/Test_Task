@@ -13,10 +13,10 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 #endif
 #define TEST_TASK_Test_taskGameModeBase_generated_h
 
-#define Test_task_Source_Test_task_Test_taskGameModeBase_h_15_SPARSE_DATA
-#define Test_task_Source_Test_task_Test_taskGameModeBase_h_15_RPC_WRAPPERS
-#define Test_task_Source_Test_task_Test_taskGameModeBase_h_15_RPC_WRAPPERS_NO_PURE_DECLS
-#define Test_task_Source_Test_task_Test_taskGameModeBase_h_15_INCLASS_NO_PURE_DECLS \
+#define Test_task_Source_Test_task_Test_taskGameModeBase_h_16_SPARSE_DATA
+#define Test_task_Source_Test_task_Test_taskGameModeBase_h_16_RPC_WRAPPERS
+#define Test_task_Source_Test_task_Test_taskGameModeBase_h_16_RPC_WRAPPERS_NO_PURE_DECLS
+#define Test_task_Source_Test_task_Test_taskGameModeBase_h_16_INCLASS_NO_PURE_DECLS \
 private: \
 	static void StaticRegisterNativesATest_taskGameModeBase(); \
 	friend struct Z_Construct_UClass_ATest_taskGameModeBase_Statics; \
@@ -25,7 +25,7 @@ public: \
 	DECLARE_SERIALIZER(ATest_taskGameModeBase)
 
 
-#define Test_task_Source_Test_task_Test_taskGameModeBase_h_15_INCLASS \
+#define Test_task_Source_Test_task_Test_taskGameModeBase_h_16_INCLASS \
 private: \
 	static void StaticRegisterNativesATest_taskGameModeBase(); \
 	friend struct Z_Construct_UClass_ATest_taskGameModeBase_Statics; \
@@ -34,7 +34,7 @@ public: \
 	DECLARE_SERIALIZER(ATest_taskGameModeBase)
 
 
-#define Test_task_Source_Test_task_Test_taskGameModeBase_h_15_STANDARD_CONSTRUCTORS \
+#define Test_task_Source_Test_task_Test_taskGameModeBase_h_16_STANDARD_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ATest_taskGameModeBase(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ATest_taskGameModeBase) \
@@ -47,7 +47,7 @@ private: \
 public:
 
 
-#define Test_task_Source_Test_task_Test_taskGameModeBase_h_15_ENHANCED_CONSTRUCTORS \
+#define Test_task_Source_Test_task_Test_taskGameModeBase_h_16_ENHANCED_CONSTRUCTORS \
 	/** Standard constructor, called after all reflected properties have been initialized */ \
 	NO_API ATest_taskGameModeBase(const FObjectInitializer& ObjectInitializer = FObjectInitializer::Get()) : Super(ObjectInitializer) { }; \
 private: \
@@ -60,28 +60,28 @@ DEFINE_VTABLE_PTR_HELPER_CTOR_CALLER(ATest_taskGameModeBase); \
 	DEFINE_DEFAULT_OBJECT_INITIALIZER_CONSTRUCTOR_CALL(ATest_taskGameModeBase)
 
 
-#define Test_task_Source_Test_task_Test_taskGameModeBase_h_15_PRIVATE_PROPERTY_OFFSET
-#define Test_task_Source_Test_task_Test_taskGameModeBase_h_12_PROLOG
-#define Test_task_Source_Test_task_Test_taskGameModeBase_h_15_GENERATED_BODY_LEGACY \
+#define Test_task_Source_Test_task_Test_taskGameModeBase_h_16_PRIVATE_PROPERTY_OFFSET
+#define Test_task_Source_Test_task_Test_taskGameModeBase_h_13_PROLOG
+#define Test_task_Source_Test_task_Test_taskGameModeBase_h_16_GENERATED_BODY_LEGACY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Test_task_Source_Test_task_Test_taskGameModeBase_h_15_PRIVATE_PROPERTY_OFFSET \
-	Test_task_Source_Test_task_Test_taskGameModeBase_h_15_SPARSE_DATA \
-	Test_task_Source_Test_task_Test_taskGameModeBase_h_15_RPC_WRAPPERS \
-	Test_task_Source_Test_task_Test_taskGameModeBase_h_15_INCLASS \
-	Test_task_Source_Test_task_Test_taskGameModeBase_h_15_STANDARD_CONSTRUCTORS \
+	Test_task_Source_Test_task_Test_taskGameModeBase_h_16_PRIVATE_PROPERTY_OFFSET \
+	Test_task_Source_Test_task_Test_taskGameModeBase_h_16_SPARSE_DATA \
+	Test_task_Source_Test_task_Test_taskGameModeBase_h_16_RPC_WRAPPERS \
+	Test_task_Source_Test_task_Test_taskGameModeBase_h_16_INCLASS \
+	Test_task_Source_Test_task_Test_taskGameModeBase_h_16_STANDARD_CONSTRUCTORS \
 public: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 
 
-#define Test_task_Source_Test_task_Test_taskGameModeBase_h_15_GENERATED_BODY \
+#define Test_task_Source_Test_task_Test_taskGameModeBase_h_16_GENERATED_BODY \
 PRAGMA_DISABLE_DEPRECATION_WARNINGS \
 public: \
-	Test_task_Source_Test_task_Test_taskGameModeBase_h_15_PRIVATE_PROPERTY_OFFSET \
-	Test_task_Source_Test_task_Test_taskGameModeBase_h_15_SPARSE_DATA \
-	Test_task_Source_Test_task_Test_taskGameModeBase_h_15_RPC_WRAPPERS_NO_PURE_DECLS \
-	Test_task_Source_Test_task_Test_taskGameModeBase_h_15_INCLASS_NO_PURE_DECLS \
-	Test_task_Source_Test_task_Test_taskGameModeBase_h_15_ENHANCED_CONSTRUCTORS \
+	Test_task_Source_Test_task_Test_taskGameModeBase_h_16_PRIVATE_PROPERTY_OFFSET \
+	Test_task_Source_Test_task_Test_taskGameModeBase_h_16_SPARSE_DATA \
+	Test_task_Source_Test_task_Test_taskGameModeBase_h_16_RPC_WRAPPERS_NO_PURE_DECLS \
+	Test_task_Source_Test_task_Test_taskGameModeBase_h_16_INCLASS_NO_PURE_DECLS \
+	Test_task_Source_Test_task_Test_taskGameModeBase_h_16_ENHANCED_CONSTRUCTORS \
 private: \
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
 

@@ -17,6 +17,8 @@ void EmptyLinkFunctionForGeneratedCodeTest_taskGameModeBase() {}
 	TEST_TASK_API UClass* Z_Construct_UClass_ATest_taskGameModeBase();
 	ENGINE_API UClass* Z_Construct_UClass_AGameModeBase();
 	UPackage* Z_Construct_UPackage__Script_Test_task();
+	UMG_API UClass* Z_Construct_UClass_UUserWidget_NoRegister();
+	COREUOBJECT_API UClass* Z_Construct_UClass_UClass();
 // End Cross Module References
 	void ATest_taskGameModeBase::StaticRegisterNativesATest_taskGameModeBase()
 	{
@@ -31,6 +33,15 @@ void EmptyLinkFunctionForGeneratedCodeTest_taskGameModeBase() {}
 #if WITH_METADATA
 		static const UE4CodeGen_Private::FMetaDataPairParam Class_MetaDataParams[];
 #endif
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MainHUD_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FObjectPropertyParams NewProp_MainHUD;
+#if WITH_METADATA
+		static const UE4CodeGen_Private::FMetaDataPairParam NewProp_MainHUDClass_MetaData[];
+#endif
+		static const UE4CodeGen_Private::FClassPropertyParams NewProp_MainHUDClass;
+		static const UE4CodeGen_Private::FPropertyParamsBase* const PropPointers[];
 		static const FCppClassTypeInfoStatic StaticCppClassTypeInfo;
 		static const UE4CodeGen_Private::FClassParams ClassParams;
 	};
@@ -47,6 +58,24 @@ void EmptyLinkFunctionForGeneratedCodeTest_taskGameModeBase() {}
 		{ "ShowCategories", "Input|MouseInput Input|TouchInput" },
 	};
 #endif
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATest_taskGameModeBase_Statics::NewProp_MainHUD_MetaData[] = {
+		{ "EditInline", "true" },
+		{ "ModuleRelativePath", "Test_taskGameModeBase.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FObjectPropertyParams Z_Construct_UClass_ATest_taskGameModeBase_Statics::NewProp_MainHUD = { "MainHUD", nullptr, (EPropertyFlags)0x0010000000080008, UE4CodeGen_Private::EPropertyGenFlags::Object, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATest_taskGameModeBase, MainHUD), Z_Construct_UClass_UUserWidget_NoRegister, METADATA_PARAMS(Z_Construct_UClass_ATest_taskGameModeBase_Statics::NewProp_MainHUD_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATest_taskGameModeBase_Statics::NewProp_MainHUD_MetaData)) };
+#if WITH_METADATA
+	const UE4CodeGen_Private::FMetaDataPairParam Z_Construct_UClass_ATest_taskGameModeBase_Statics::NewProp_MainHUDClass_MetaData[] = {
+		{ "Category", "Widgets" },
+		{ "ModuleRelativePath", "Test_taskGameModeBase.h" },
+	};
+#endif
+	const UE4CodeGen_Private::FClassPropertyParams Z_Construct_UClass_ATest_taskGameModeBase_Statics::NewProp_MainHUDClass = { "MainHUDClass", nullptr, (EPropertyFlags)0x0014000000000015, UE4CodeGen_Private::EPropertyGenFlags::Class, RF_Public|RF_Transient|RF_MarkAsNative, 1, STRUCT_OFFSET(ATest_taskGameModeBase, MainHUDClass), Z_Construct_UClass_UUserWidget_NoRegister, Z_Construct_UClass_UClass, METADATA_PARAMS(Z_Construct_UClass_ATest_taskGameModeBase_Statics::NewProp_MainHUDClass_MetaData, UE_ARRAY_COUNT(Z_Construct_UClass_ATest_taskGameModeBase_Statics::NewProp_MainHUDClass_MetaData)) };
+	const UE4CodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_ATest_taskGameModeBase_Statics::PropPointers[] = {
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATest_taskGameModeBase_Statics::NewProp_MainHUD,
+		(const UE4CodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_ATest_taskGameModeBase_Statics::NewProp_MainHUDClass,
+	};
 	const FCppClassTypeInfoStatic Z_Construct_UClass_ATest_taskGameModeBase_Statics::StaticCppClassTypeInfo = {
 		TCppClassTypeTraits<ATest_taskGameModeBase>::IsAbstract,
 	};
@@ -56,11 +85,11 @@ void EmptyLinkFunctionForGeneratedCodeTest_taskGameModeBase() {}
 		&StaticCppClassTypeInfo,
 		DependentSingletons,
 		nullptr,
-		nullptr,
+		Z_Construct_UClass_ATest_taskGameModeBase_Statics::PropPointers,
 		nullptr,
 		UE_ARRAY_COUNT(DependentSingletons),
 		0,
-		0,
+		UE_ARRAY_COUNT(Z_Construct_UClass_ATest_taskGameModeBase_Statics::PropPointers),
 		0,
 		0x009002ACu,
 		METADATA_PARAMS(Z_Construct_UClass_ATest_taskGameModeBase_Statics::Class_MetaDataParams, UE_ARRAY_COUNT(Z_Construct_UClass_ATest_taskGameModeBase_Statics::Class_MetaDataParams))
@@ -74,7 +103,7 @@ void EmptyLinkFunctionForGeneratedCodeTest_taskGameModeBase() {}
 		}
 		return OuterClass;
 	}
-	IMPLEMENT_CLASS(ATest_taskGameModeBase, 1265488175);
+	IMPLEMENT_CLASS(ATest_taskGameModeBase, 1154291459);
 	template<> TEST_TASK_API UClass* StaticClass<ATest_taskGameModeBase>()
 	{
 		return ATest_taskGameModeBase::StaticClass();

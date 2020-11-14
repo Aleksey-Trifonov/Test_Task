@@ -1,0 +1,16 @@
+﻿  Using 'git status' to determine working set for adaptive non-unity build (D:\Projects\Vizor\Test_Task).
+  Deleted hot-reload file: D:\Projects\Vizor\Test_Task\Test_task\Binaries\Win64\UE4Editor-Test_task-0022.dll
+  Deleted hot-reload file: D:\Projects\Vizor\Test_Task\Test_task\Binaries\Win64\UE4Editor-Test_task-0028.dll
+  Deleted hot-reload file: D:\Projects\Vizor\Test_Task\Test_task\Intermediate\Build\Win64\UE4Editor\Development\Test_task\UE4Editor-Test_task-0022.lib
+  Deleted hot-reload file: D:\Projects\Vizor\Test_Task\Test_task\Intermediate\Build\Win64\UE4Editor\Development\Test_task\UE4Editor-Test_task-0028.lib
+  Building Test_taskEditor...
+  Using Visual Studio 2019 14.27.29111 toolchain (C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110) and Windows 10.0.18362.0 SDK (C:\Program Files (x86)\Windows Kits\10).
+  Building 4 actions with 12 processes...
+    [1/4] TestTaskHUD.cpp
+    [2/4] UE4Editor-Test_task.lib
+       Creating library D:\Projects\Vizor\Test_Task\Test_task\Intermediate\Build\Win64\UE4Editor\Development\Test_task\UE4Editor-Test_task.lib and object D:\Projects\Vizor\Test_Task\Test_task\Intermediate\Build\Win64\UE4Editor\Development\Test_task\UE4Editor-Test_task.exp
+    [3/4] UE4Editor-Test_task.dll
+       Creating library D:\Projects\Vizor\Test_Task\Test_task\Intermediate\Build\Win64\UE4Editor\Development\Test_task\UE4Editor-Test_task.suppressed.lib and object D:\Projects\Vizor\Test_Task\Test_task\Intermediate\Build\Win64\UE4Editor\Development\Test_task\UE4Editor-Test_task.suppressed.exp
+    [4/4] Test_taskEditor.target
+  Total time in Parallel executor: 5,51 seconds
+  Total execution time: 6,01 seconds

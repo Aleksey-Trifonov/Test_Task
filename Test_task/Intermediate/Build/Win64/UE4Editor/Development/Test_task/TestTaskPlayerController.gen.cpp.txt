@@ -1,0 +1,5 @@
+D:\Projects\Vizor\Test_Task\Test_task\Intermediate\Build\Win64\UE4Editor\Development\Test_task\Definitions.Test_task.h
+C:\Program Files (x86)\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/GeneratedCppIncludes.h
+C:\Program Files (x86)\Epic Games\UE_4.25\Engine\Source\Runtime\CoreUObject\Public\UObject/MetaData.h
+D:\Projects\Vizor\Test_Task\Test_task\Source\Test_task/TestTaskPlayerController.h
+D:\Projects\Vizor\Test_Task\Test_task\Intermediate\Build\Win64\UE4Editor\Inc\Test_task\TestTaskPlayerController.generated.h
