@@ -118,6 +118,8 @@ C:\Program Files (x86)\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Edi
 C:\Program Files (x86)\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\DynamicPropertyPath.generated.h
 C:\Program Files (x86)\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\WidgetBlueprintGeneratedClass.generated.h
 C:\Program Files (x86)\Epic Games\UE_4.25\Engine\Intermediate\Build\Win64\UE4Editor\Inc\UMG\UserWidget.generated.h
+D:\Projects\Vizor\Test_Task\Test_task\Source\Test_task\SelectableButton.h
+D:\Projects\Vizor\Test_Task\Test_task\Intermediate\Build\Win64\UE4Editor\Inc\Test_task\SelectableButton.generated.h
 D:\Projects\Vizor\Test_Task\Test_task\Intermediate\Build\Win64\UE4Editor\Inc\Test_task\TestTaskHUD.generated.h
 D:\Projects\Vizor\Test_Task\Test_task\Intermediate\Build\Win64\UE4Editor\Inc\Test_task\TestPawn.generated.h
 C:\Program Files (x86)\Epic Games\UE_4.25\Engine\Source\Runtime\Engine\Classes\Kismet/GameplayStatics.h

@@ -16,7 +16,8 @@ public:
 	// Sets default values for this pawn's properties
 	ATestPawn();
 
-	UTestTaskHUD* TestHUD;
+	UTestTaskHUD* TestWidget;
+	UUserWidget* StartWidget;
 
 protected:
 	// Called when the game starts or when spawned

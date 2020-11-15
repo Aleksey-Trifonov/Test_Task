@@ -11,5 +11,13 @@ void ATest_taskGameModeBase::BeginPlay()
 	if (MainHUD)
 	{
 		MainHUD->AddToViewport();
+		MainHUD->SetVisibility(ESlateVisibility::Hidden);
+	}
+
+	StartWidget = CreateWidget<UUserWidget>(GetWorld(), StartWidgetClass);
+	if (StartWidget)
+	{
+		StartWidget->AddToViewport();
+		StartWidget->SetVisibility(ESlateVisibility::Visible);
 	}
 }

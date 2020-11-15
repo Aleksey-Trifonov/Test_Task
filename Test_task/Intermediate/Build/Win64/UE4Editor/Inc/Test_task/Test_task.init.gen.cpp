@@ -11,18 +11,24 @@
 #endif
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCodeTest_task_init() {}
+	TEST_TASK_API UFunction* Z_Construct_UDelegateFunction_Test_task_OnSelectableButtonFocusObtained__DelegateSignature();
+	TEST_TASK_API UFunction* Z_Construct_UDelegateFunction_Test_task_OnSelectableButtonFocusLost__DelegateSignature();
 	UPackage* Z_Construct_UPackage__Script_Test_task()
 	{
 		static UPackage* ReturnPackage = nullptr;
 		if (!ReturnPackage)
 		{
+			static UObject* (*const SingletonFuncArray[])() = {
+				(UObject* (*)())Z_Construct_UDelegateFunction_Test_task_OnSelectableButtonFocusObtained__DelegateSignature,
+				(UObject* (*)())Z_Construct_UDelegateFunction_Test_task_OnSelectableButtonFocusLost__DelegateSignature,
+			};
 			static const UE4CodeGen_Private::FPackageParams PackageParams = {
 				"/Script/Test_task",
-				nullptr,
-				0,
+				SingletonFuncArray,
+				UE_ARRAY_COUNT(SingletonFuncArray),
 				PKG_CompiledIn | 0x00000000,
-				0xD3E1558D,
-				0x156F3230,
+				0xA07AB42A,
+				0x95F0FAD4,
 				METADATA_PARAMS(nullptr, 0)
 			};
 			UE4CodeGen_Private::ConstructUPackage(ReturnPackage, PackageParams);

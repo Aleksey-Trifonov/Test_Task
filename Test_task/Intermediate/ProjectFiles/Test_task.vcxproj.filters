@@ -3,7 +3,7 @@
   <ItemGroup>
     <None Include="..\..\Test_task.uproject" />
     <Filter Include="Source">
-      <UniqueIdentifier>{83753AB5-B641-4BF7-A35C-B05CD3869C03}</UniqueIdentifier>
+      <UniqueIdentifier>{BD516FA2-AAFD-4C2A-BD3A-A26F264B501D}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Source\Test_task.Target.cs">
       <Filter>Source</Filter>
@@ -12,7 +12,7 @@
       <Filter>Source</Filter>
     </None>
     <Filter Include="Config">
-      <UniqueIdentifier>{EA68C0FD-C2B7-4BB3-803A-061BBC4C0C1E}</UniqueIdentifier>
+      <UniqueIdentifier>{5C38BEDB-85B9-4EBF-B9B8-65A993D9361E}</UniqueIdentifier>
     </Filter>
     <None Include="..\..\Config\DefaultEditor.ini">
       <Filter>Config</Filter>
@@ -23,13 +23,16 @@
     <None Include="..\..\Config\DefaultGame.ini">
       <Filter>Config</Filter>
     </None>
+    <None Include="..\..\Config\DefaultInput.ini">
+      <Filter>Config</Filter>
+    </None>
     <Filter Include="Source\Test_task">
-      <UniqueIdentifier>{8B7F31FA-0214-4BFD-8B3C-DD78D36AEAA2}</UniqueIdentifier>
+      <UniqueIdentifier>{87F8D690-85B0-480B-9EE6-3C3083BD1297}</UniqueIdentifier>
     </Filter>
-    <ClCompile Include="..\..\Source\Test_task\TabElement.cpp">
+    <ClCompile Include="..\..\Source\Test_task\SelectableButton.cpp">
       <Filter>Source\Test_task</Filter>
     </ClCompile>
-    <ClInclude Include="..\..\Source\Test_task\TabElement.h">
+    <ClInclude Include="..\..\Source\Test_task\SelectableButton.h">
       <Filter>Source\Test_task</Filter>
     </ClInclude>
     <ClCompile Include="..\..\Source\Test_task\TestPawn.cpp">

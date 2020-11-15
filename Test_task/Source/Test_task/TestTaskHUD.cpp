@@ -4,29 +4,38 @@
 #include "TestTaskHUD.h"
 #include "Components/Image.h"
 #include "Components/TextBlock.h"
+#include "Kismet/GameplayStatics.h"
 
 void UTestTaskHUD::NativeConstruct()
 {
 	Super::NativeConstruct();
 
 	CurrentTabIndex = 0;
+	CurrentButtonIndex = 0;
 
 	CollectWidgets();
+
+	HighlightSelectedTab();
+	SetButtonFocus();
 }
 
 void UTestTaskHUD::CollectWidgets()
 {
 	TabTexts.Add(HomeTab);
-	TabLines.Add(HomeLine);
-
 	TabTexts.Add(MissionsTab);
-	TabLines.Add(MissionsLine);
-
 	TabTexts.Add(LibraryTab);
-	TabLines.Add(LibraryLine);
-
 	TabTexts.Add(SettingsTab);
+
+	TabLines.Add(HomeLine);
+	TabLines.Add(MissionsLine);
+	TabLines.Add(LibraryLine);
 	TabLines.Add(SettingsLine);
+
+	SelectableButtons.Add(QuickGameButton);
+	SelectableButtons.Add(RandomMatchButton);
+	SelectableButtons.Add(AchievementsButton);
+	SelectableButtons.Add(QuestButton);
+	SelectableButtons.Add(LocationsButton);
 }
 
 void UTestTaskHUD::SelectNextTab()
@@ -53,8 +62,6 @@ void UTestTaskHUD::SelectPreviousTab()
 
 void UTestTaskHUD::HighlightSelectedTab()
 {
-	UE_LOG(LogTemp, Warning, TEXT("Highlight tab"));
-
 	for (int i = 0; i < TabTexts.Num(); i++)
 	{
 		if (i == CurrentTabIndex)
@@ -72,5 +79,22 @@ void UTestTaskHUD::HighlightSelectedTab()
 
 void UTestTaskHUD::SetButtonFocus()
 {
-	//TabTexts[0]->SetKeyboardFocus();
+	SelectableButtons[CurrentButtonIndex]->SetFocus();
+}
+
+void UTestTaskHUD::OnApplyButtonPressed()
+{
+	DescriptionHeader->SetText(CurrentButtonText);
+	SelectedCategoryImage->SetBrushFromTexture(SelectedButtonsImages[CurrentButtonIndex]);
+}
+
+void UTestTaskHUD::UpdateSelectedButtonInfo(int32 ButtonIndex, FText CategoryText)
+{
+	CurrentButtonIndex = ButtonIndex;
+	CurrentButtonText = CategoryText;
+}
+
+void UTestTaskHUD::OnBackButtonPressed()
+{
+	SetVisibility(ESlateVisibility::Hidden);
 }

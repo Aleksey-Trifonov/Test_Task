@@ -22,6 +22,12 @@ public:
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Widgets")
 	TSubclassOf<UUserWidget> MainHUDClass;
 
-	UPROPERTY()
+	UPROPERTY(BlueprintReadOnly)
 	UUserWidget* MainHUD;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = "Widgets")
+	TSubclassOf<UUserWidget> StartWidgetClass;
+
+	UPROPERTY(BlueprintReadOnly)
+	UUserWidget* StartWidget;
 };

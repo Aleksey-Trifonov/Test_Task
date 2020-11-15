@@ -24,7 +24,8 @@ void ATestPawn::BeginPlay()
 		ATest_taskGameModeBase* TestTaskGameMode = Cast<ATest_taskGameModeBase>(GameMode);
 		if (TestTaskGameMode)
 		{
-			TestHUD = Cast<UTestTaskHUD>(TestTaskGameMode->MainHUD);
+			TestWidget = Cast<UTestTaskHUD>(TestTaskGameMode->MainHUD);
+			StartWidget = TestTaskGameMode->StartWidget;
 		}
 	}
 }
@@ -49,22 +50,27 @@ void ATestPawn::SetupPlayerInputComponent(UInputComponent* PlayerInputComponent)
 
 void ATestPawn::OnPageUpPressed()
 {
-	TestHUD->SelectNextTab();
-	UE_LOG(LogTemp, Warning, TEXT("Next tab"));
+	TestWidget->SelectNextTab();
 }
 
 void ATestPawn::OnPageDownPressed()
 {
-	TestHUD->SelectPreviousTab();
-	UE_LOG(LogTemp, Warning, TEXT("Previous tab"));
+	TestWidget->SelectPreviousTab();
 }
 
 void ATestPawn::OnApplyPressed()
 {
-
+	if (TestWidget->IsVisible())
+	{
+		TestWidget->OnApplyButtonPressed();
+	}
 }
 
 void ATestPawn::OnBackPressed()
 {
-
+	if (TestWidget->IsVisible())
+	{
+		TestWidget->OnBackButtonPressed();
+		StartWidget->SetVisibility(ESlateVisibility::Visible);
+	}
 }

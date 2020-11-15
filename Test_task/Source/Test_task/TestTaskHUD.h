@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "Blueprint/UserWidget.h"
+#include "SelectableButton.h"
 #include "TestTaskHUD.generated.h"
 
 UCLASS()
@@ -20,7 +21,19 @@ public:
 	void SelectPreviousTab();
 
 	UFUNCTION(BlueprintCallable)
+	void HighlightSelectedTab();
+
+	UFUNCTION(BlueprintCallable)
 	void SetButtonFocus();
+
+	UFUNCTION(BlueprintCallable)
+	void OnApplyButtonPressed();
+
+	UFUNCTION(BlueprintCallable)
+	void UpdateSelectedButtonInfo(int32 ButtonIndex, FText CategoryText);
+
+	UFUNCTION()
+	void OnBackButtonPressed();
 
 protected:
 
@@ -46,17 +59,29 @@ protected:
 
 	UPROPERTY(meta = (BindWidget))
 	UTextBlock* DescriptionHeader;
+	UPROPERTY(meta = (BindWidget))
+	UImage* SelectedCategoryImage;
 
-	UPROPERTY(EditDefaultsOnly, Category = "Overlays")
-	UTexture2D* SelectedButtonOverlay;
-
-	UPROPERTY(EditDefaultsOnly, Category = "Overlays")
-	UTexture2D* UnselectedButtonOverlay;
+	UPROPERTY(meta = (BindWidget))
+	USelectableButton* QuickGameButton;
+	UPROPERTY(meta = (BindWidget))
+	USelectableButton* RandomMatchButton;
+	UPROPERTY(meta = (BindWidget))
+	USelectableButton* AchievementsButton;
+	UPROPERTY(meta = (BindWidget))
+	USelectableButton* QuestButton;
+	UPROPERTY(meta = (BindWidget))
+	USelectableButton* LocationsButton;
 
 	UPROPERTY()
 	TArray<UTextBlock*> TabTexts;
 	UPROPERTY()
 	TArray<UImage*> TabLines;
+	UPROPERTY()
+	TArray<USelectableButton*> SelectableButtons;
+
+	UPROPERTY(EditDefaultsOnly)
+	TArray<UTexture2D*> SelectedButtonsImages;
 
 	void NativeConstruct() override;
 
@@ -65,10 +90,9 @@ private:
 	UFUNCTION()
 	void CollectWidgets();
 
-	UFUNCTION()
-	void HighlightSelectedTab();
-
 	int32 CurrentTabIndex;
 
 	int32 CurrentButtonIndex;
+
+	FText CurrentButtonText;
 };
